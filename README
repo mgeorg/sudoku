@@ -1,0 +1,13 @@
+A sudoku board helper.
+
+This program will load up a board and do the simple computations on it.
+
+1) Mark all numbers impossible that are already present on the same row, column, or block.
+2) Mark a number as the only possibility if it is the only cell in that row, column, or block that can contain that number.
+3) Do inference on two or more cells at a time with the same logic as (1) and (2).  Meaning, if two cells in a block are the only numbers that can contain a given two values, then they must contain those two values (all other possibilities are impossible).  And, if two cells in a block can only have two values, then no other cell in the same block can take on those values.
+
+It is possible to construct sudoku which cannot be solved in this manner, but require guessing and backtracking.
+
+Somewhere I have code which does guessing and backtracking and creates lists of boards of varying levels of difficulty.  Whenever I find the code in my archives I'll update this project.
+
+It's possible this code is a snapshot which doesn't work particularly well.
